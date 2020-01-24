@@ -100,6 +100,13 @@ I was able to solve it by adjusting the Pi's "Memory Split" setting to 256MB. Th
 
 You can access this setting by running sudo raspi-config. "Memory Split" is under "Advanced Options".
 
+Still problems?
+Follow this order of commands:
+
+- `sudo apt-get update`
+- `sudo apt-get upgrade`
+- `sudo rpi-update`
+The last one is very important if you bought your Raspberry a long time ago, AND if you want some new features.
 
 
 ### install newer Gutenprint Driver (V 5.3)
