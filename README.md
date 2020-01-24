@@ -44,7 +44,7 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 - setup `Advanced Options` -> `Overscan enable (if necessary)` / `Memory Split to 256 MB`
 - exit raspi-config
 
-### Change resolution (if necessary)
+### Change resolution (if necessary; it may be also necessary, if the screen is smaller)
 - sudo nano `/boot/config.txt`
 
 - add
