@@ -93,6 +93,12 @@ Power: 5V/5A Powersupply (5Amps not needed, 2Amps should be enough)
 - `sudo pip3 install transitions`
 - `sudo pip3 install Wand`
 
+### testing the camera
+- `raspistill -o 8mp.png -w 3280 -h 2464`
+If you got an error:
+I was able to solve it by adjusting the Pi's "Memory Split" setting to 256MB. This changes how much memory is available to the GPU.
+
+You can access this setting by running sudo raspi-config. "Memory Split" is under "Advanced Options".
 
 
 
