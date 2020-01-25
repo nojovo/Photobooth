@@ -412,6 +412,9 @@ class Photobooth:
         del self.imagetemplate1
         del self.imagetemplate2
 
+        # stop telegram bot
+        self.updater.stop()
+
     # Init the State machine controlling the Photobooth
     def initStateMachine(self):
         logging.debug("Init State Machine")
@@ -1320,5 +1323,3 @@ if __name__ == "__main__":
 
     finally:        
         logging.debug("logfile closed")        
-        # stop telegram bot
-        updater.stop()
