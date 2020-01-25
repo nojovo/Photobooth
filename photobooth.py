@@ -25,6 +25,9 @@ import re
 
 from telegram.error import (TelegramError, Unauthorized, BadRequest, TimedOut, ChatMigrated, NetworkError)
 
+## for image from memory
+from io import BytesIO
+
 # get the real path of the script
 REAL_PATH = os.path.dirname(os.path.realpath(__file__))
 
@@ -959,7 +962,16 @@ class Photobooth:
 
             #updater.start_polling()
             # updater.idle()
+           
+            # i = image.open(self.cardfilename)
+            # bio = BytesIO()            
+            # bio.name = 'image.jpeg'
+            # #image.save(bio, 'JPEG')
+            # i.save(bio, 'JPEG')
+            # bio.seek(0)
+            # bot.send_photo(chat_id, photo=bio)
 
+            send_image(self.token,self.cardfilename,self.chat_id)
            
 
         # print photo?
@@ -1259,6 +1271,11 @@ def bop(update, context):
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+
+def send_image(botToken, imageFile, chat_id):
+    command = 'curl -s -X POST https://api.telegram.org/bot' + botToken + '/sendPhoto -F chat_id=' + chat_id + " -F photo=@" + imageFile
+    subprocess.call(command.split(' '))
+    return
 
 #def unknown(update, context):
 #    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
