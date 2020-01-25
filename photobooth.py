@@ -1251,7 +1251,7 @@ def bop(update, context):
     #chat_id = update.message.chat_id
     logging.debug("telegram bop the image" + context.self.cardfilename)
     # context.bot.send_photo(chat_id=context.self.chat_id, open(photo=context.self.cardfilename, 'rb'))
-    context.bot.send_photo(chat_id=update.effective_chat.id, open('/home/pi/Photobooth/Photos/2020-01-25_16-35-25_card.jpg', 'rb'))    
+    context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('/home/pi/Photobooth/Photos/2020-01-25_16-35-25_card.jpg', 'rb'))                          
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
