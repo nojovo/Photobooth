@@ -10,16 +10,16 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
+   width="800"
    height="480"
-   viewBox="0 0 158.75 127"
+   viewBox="0 0 211.66667 127"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="ScreenDevelop.svg"
-   inkscape:export-filename="w:\develop\python\Photobooth\Screens_800x480\ScreenChooseLayout.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-filename="w:\develop\python\Photobooth\Screens_800x480\ScreenBlack.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <title
      id="title817">Screens for Photobooth</title>
   <defs
@@ -27,7 +27,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter975">
       <feColorMatrix
@@ -124,7 +124,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="Darkens the edge with an inner blur and adds a flexible glow"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Dark and Glow"
        id="filter1041"
        y="-0.25"
@@ -224,7 +224,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1091">
       <feColorMatrix
@@ -321,7 +321,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1173">
       <feColorMatrix
@@ -503,7 +503,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1296">
       <feColorMatrix
@@ -600,7 +600,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1347">
       <feColorMatrix
@@ -697,7 +697,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1418">
       <feColorMatrix
@@ -794,7 +794,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1477">
       <feColorMatrix
@@ -891,7 +891,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1528">
       <feColorMatrix
@@ -988,7 +988,7 @@
     <filter
        inkscape:menu="Shadows and Glows"
        inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        inkscape:label="Cutout Glow"
        id="filter1579">
       <feColorMatrix
@@ -1126,11 +1126,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="257.87532"
-     inkscape:cy="242.76544"
+     inkscape:zoom="0.87283493"
+     inkscape:cx="435.15552"
+     inkscape:cy="306.33464"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1856"
@@ -1145,8 +1145,8 @@
        id="grid815"
        spacingx="26.458333"
        spacingy="21.166667"
-       visible="false"
-       enabled="false" />
+       visible="true"
+       enabled="true" />
     <inkscape:grid
        type="xygrid"
        id="grid2237"
@@ -1155,7 +1155,8 @@
        empcolor="#ff3fff"
        empopacity="0.25098039"
        spacingx="2.6458333"
-       spacingy="2.1166667" />
+       spacingy="2.1166667"
+       enabled="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -1207,7 +1208,21 @@
            height="80"
            x="300"
            y="400" /></flowRegion><flowPara
-         id="flowPara1135"></flowPara></flowRoot>  </g>
+         id="flowPara1135" /></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="800x480"
+     style="display:none;opacity:0.09800002"
+     transform="translate(0,-31.75)">
+    <rect
+       style="fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.29508123;stroke-opacity:1"
+       id="rect1167"
+       width="264.58334"
+       height="158.75"
+       x="0"
+       y="2.6090241e-14" />
+  </g>
   <g
      inkscape:label="TitlePhotobooth"
      inkscape:groupmode="layer"
@@ -1218,7 +1233,7 @@
        xml:space="preserve"
        id="flowRoot819"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter975)"
-       transform="matrix(0.26458333,0,0,0.26458333,0,170.00001)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,23.812499,170.26459)"><flowRegion
          id="flowRegion821"><rect
            id="rect823"
            width="400"
@@ -1231,12 +1246,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Button"
-     style="display:none">
+     style="display:inline">
     <flowRoot
        xml:space="preserve"
        id="flowRoot1055"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1091)"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.75595232,0)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,49.120454,-0.09354433)"><flowRegion
          id="flowRegion1057"><rect
            id="rect1059"
            width="300"
@@ -1273,7 +1288,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(0.05014801,0,0,0.04977656,145.08551,117.62563)"
+       transform="matrix(0.05014801,0,0,0.04977656,194.96192,117.53209)"
        id="layer1-7">
       <path
          transform="matrix(0.949753,0,0,0.949753,-10.31027,-14.52566)"
@@ -1311,7 +1326,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(0.05014801,0,0,0.04977656,144.58521,115.9197)"
+       transform="matrix(0.05014801,0,0,0.04977656,194.46162,115.82616)"
        id="layer1-7-6">
       <path
          transform="matrix(0.949753,0,0,0.949753,-10.31027,-14.52566)"
@@ -1375,20 +1390,20 @@
        id="rect2239-6"
        width="31.938707"
        height="21.114288"
-       x="122.77295"
-       y="105.11735" />
+       x="172.64935"
+       y="105.0238" />
     <rect
        style="fill:#0d00ff;fill-opacity:1;stroke:none;stroke-width:0.11612733;stroke-opacity:1"
        id="rect2243-3"
        width="10.156241"
        height="6.8287363"
-       x="125.71291"
-       y="107.12186" />
+       x="175.58932"
+       y="107.02831" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot2245-1"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,104.19772,36.121513)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,154.07413,36.027969)"><flowRegion
          id="flowRegion2247-3"><rect
            id="rect2249-8"
            width="41.012192"
@@ -1400,7 +1415,7 @@
        xml:space="preserve"
        id="flowRoot2253-9"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:vertical-lr;text-orientation:sideways;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,110.73642,47.546982)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,160.61283,47.453438)"><flowRegion
          id="flowRegion2255-5"
          style="text-align:start;writing-mode:vertical-lr;text-orientation:sideways;text-anchor:start"><rect
            id="rect2257-2"
@@ -1415,11 +1430,11 @@
        id="rect2243-3-6"
        width="10.156241"
        height="6.8287363"
-       x="137.67053"
-       y="107.12183" />
+       x="187.54694"
+       y="107.02829" />
     <rect
-       y="116.7569"
-       x="125.65009"
+       y="116.66335"
+       x="175.5265"
        height="6.8287363"
        width="10.156241"
        id="rect2343"
@@ -1429,13 +1444,13 @@
        id="rect2345"
        width="10.156241"
        height="6.8287363"
-       x="137.85764"
-       y="116.80367" />
+       x="187.73404"
+       y="116.71013" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot2347"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-1.2628485,-0.32740517)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,48.613558,-0.4209495)"><flowRegion
          id="flowRegion2349"><rect
            id="rect2351"
            width="28.562084"
@@ -1447,7 +1462,7 @@
        xml:space="preserve"
        id="flowRoot2355"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.33333302px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(0.26458333)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,49.876407,-0.09354433)"><flowRegion
          id="flowRegion2357"><rect
            id="rect2359"
            width="27.400389"
@@ -1459,7 +1474,7 @@
        xml:space="preserve"
        id="flowRoot2363"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.18708867,-1.0757598)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,49.689318,-1.1693041)"><flowRegion
          id="flowRegion2365"><rect
            id="rect2367"
            width="39.875721"
@@ -1476,7 +1491,7 @@
        xml:space="preserve"
        id="flowRoot1260"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1296)"
-       transform="matrix(0.26458333,0,0,0.26458333,0,-4.543582)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.193749,-5.6019153)"><flowRegion
          id="flowRegion1262"><rect
            id="rect1264"
            width="200"
@@ -1494,7 +1509,7 @@
        xml:space="preserve"
        id="flowRoot1311"
        style="font-style:normal;font-weight:normal;font-size:120px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1347)"
-       transform="scale(0.26458333)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.193749,-1.0583333)"><flowRegion
          id="flowRegion1313"
          style="font-size:120px;text-align:center;text-anchor:middle"><rect
            id="rect1315"
@@ -1514,7 +1529,7 @@
        xml:space="preserve"
        id="flowRoot1362"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1.25;font-family:Broadway;-inkscape-font-specification:Broadway;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1418)"
-       transform="matrix(0.26458333,0,0,0.26458333,0.26726953,-4.543582)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.461019,-5.6019153)"><flowRegion
          id="flowRegion1364"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;font-family:Broadway;-inkscape-font-specification:Broadway"><rect
            id="rect1366"
@@ -1534,7 +1549,7 @@
        xml:space="preserve"
        id="flowRoot1441"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1477)"
-       transform="scale(0.26458333)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.193749,-1.0583333)"><flowRegion
          id="flowRegion1443"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;text-anchor:middle"><rect
            id="rect1445"
@@ -1553,7 +1568,7 @@
        xml:space="preserve"
        id="flowRoot1492"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1528)"
-       transform="scale(0.26458333)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.193749,-1.0583333)"><flowRegion
          id="flowRegion1494"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;text-anchor:middle"><rect
            id="rect1496"
@@ -1572,7 +1587,7 @@
        xml:space="preserve"
        id="flowRoot1543"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.33332825px;line-height:1;font-family:Broadway;-inkscape-font-specification:Broadway;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter1579)"
-       transform="scale(0.26458333)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,26.193749,-1.0583333)"><flowRegion
          id="flowRegion1545"
          style="text-align:center;text-anchor:middle"><rect
            id="rect1547"
@@ -1588,9 +1603,9 @@
      inkscape:label="Black"
      style="display:none">
     <rect
-       style="fill:#000000;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       style="fill:#000000;stroke:none;stroke-width:0.30551451;stroke-opacity:1"
        id="rect1255"
-       width="158.75"
+       width="211.66666"
        height="127"
        x="0"
        y="-2e-06" />
