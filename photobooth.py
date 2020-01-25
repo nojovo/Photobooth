@@ -366,6 +366,15 @@ class Photobooth:
         # load the Card Layout
         self.readCardConfiguration(self.CardConfigFile)
 
+        # for the telegram bot
+        logging.info("try start telegram bot")
+        updater = Updater(self.token , use_context=True)
+
+        updater.dispatcher.add_handler(CommandHandler('hello', hello))
+
+        updater.start_polling()
+        updater.idle()
+
         # Start the Application
         self.on_enter_PowerOn()
 
@@ -1211,15 +1220,6 @@ def main():
                         filename=loggingfolder + log_filename + ".log")
     logging.info("info message")
     logging.debug("debug message")
-
-    # for the telegram bot
-    logging.info("try start telegram bot")
-    updater = Updater(self.token , use_context=True)
-
-    updater.dispatcher.add_handler(CommandHandler('hello', hello))
-
-    updater.start_polling()
-    updater.idle()
 
     # go ahaed
     while True:
