@@ -385,7 +385,7 @@ class Photobooth:
         start_handler = CommandHandler('start', start)
         dispatcher.add_handler(start_handler)
 
-        # updater.dispatcher.add_handler(CommandHandler('hello', hello))
+        updater.dispatcher.add_handler(CommandHandler('hello', hello))
         updater.dispatcher.add_handler(CommandHandler('bop', bop,))
 
         updater.start_polling()
@@ -933,19 +933,20 @@ class Photobooth:
         if self.printPicsEnable == False:
             logging.debug("print enable = false")
             logging.debug("telegram try sending the image")
+            
             # send photo
-            updater = Updater(self.token , use_context=True)
+            #updater = Updater(self.token , use_context=True)
             
             # create dispatcher
-            dispatcher = updater.dispatcher
+            #dispatcher = updater.dispatcher
 
-            start_handler = CommandHandler('start', start)
-            dispatcher.add_handler(start_handler)
+            #start_handler = CommandHandler('start', start)
+            #dispatcher.add_handler(start_handler)
 
             # updater.dispatcher.add_handler(CommandHandler('hello', hello))
             # updater.dispatcher.add_handler(CommandHandler('bop', bop,))
 
-            updater.start_polling()
+            #updater.start_polling()
             # updater.idle()
 
            
@@ -1237,11 +1238,11 @@ def hello(update, context):
     update.message.reply_text(
         'Hello {}'.format(update.message.from_user.first_name))
 
-def bop(bot, update):
+def bop(update, context):
     #url = get_url()
     #chat_id = update.message.chat_id
     logging.debug("telegram bop the image" + self.cardfilename)
-    bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
+    context.bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
