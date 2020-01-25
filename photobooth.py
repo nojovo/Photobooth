@@ -367,7 +367,7 @@ class Photobooth:
         self.readCardConfiguration(self.CardConfigFile)
 
         # for the telegram bot
-        logging.info("try start telegram bot")
+        # logging.info("try start telegram bot")
         # updater = Updater(self.token , use_context=True)
 
         # updater.dispatcher.add_handler(CommandHandler('hello', hello))
@@ -919,12 +919,19 @@ class Photobooth:
             logging.debug("telegram try sending the image")
             # send photo
             updater = Updater(self.token , use_context=True)
+            
+            # create dispatcher
+            dispatcher = updater.dispatcher
+
+            start_handler = CommandHandler('start', start)
+            dispatcher.add_handler(start_handler)
 
             # updater.dispatcher.add_handler(CommandHandler('hello', hello))
-            updater.dispatcher.add_handler(CommandHandler('bop', bop,))
+            # updater.dispatcher.add_handler(CommandHandler('bop', bop,))
 
             updater.start_polling()
-            updater.idle()
+            # updater.idle()
+
            
 
         # print photo?
@@ -1219,6 +1226,9 @@ def bop(bot, update):
     #chat_id = update.message.chat_id
     logging.debug("telegram bop the image" + self.cardfilename)
     bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
+
+def start(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
 # Main Routine
 def main():
