@@ -388,6 +388,10 @@ class Photobooth:
         updater.dispatcher.add_handler(CommandHandler('hello', hello))
         updater.dispatcher.add_handler(CommandHandler('bop', bop,))
 
+        
+        unknown_handler = MessageHandler(Filters.command, unknown)
+        dispatcher.add_handler(unknown_handler)
+
         updater.start_polling()
         # updater.idle()
 
@@ -1241,11 +1245,15 @@ def hello(update, context):
 def bop(update, context):
     #url = get_url()
     #chat_id = update.message.chat_id
-    logging.debug("telegram bop the image" + self.cardfilename)
-    context.bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
+    logging.debug("telegram bop the image" + context.self.cardfilename)
+    # context.bot.send_photo(chat_id=context.self.chat_id, open(photo=context.self.cardfilename, 'rb'))
+    context.bot.send_photo(chat_id=update.effective_chat.id, open('/home/pi/Photobooth/Photos/2020-01-25_16-35-25_card.jpg', 'rb'))    
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+
+def unknown(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
 
 # Main Routine
 def main():
@@ -1283,11 +1291,14 @@ if __name__ == "__main__":
     try:
         main()
 
+        # stop telegram bot
+        updater.stop()
+
     except KeyboardInterrupt:
         logging.debug("keyboard interrupt")
 
     except Exception as exception:
         logging.critical("unexpected error: " + str(exception))
 
-    finally:
+    finally:        
         logging.debug("logfile closed")
