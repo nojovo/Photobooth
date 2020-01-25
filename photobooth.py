@@ -1249,7 +1249,8 @@ def hello(update, context):
 def bop(update, context):
     #url = get_url()
     #chat_id = update.message.chat_id
-    logging.debug("telegram bop the image" + context.self.cardfilename)
+    #logging.debug("telegram bop the image" + context.self.cardfilename)
+    logging.debug("telegram bop the image")
     # context.bot.send_photo(chat_id=context.self.chat_id, open(photo=context.self.cardfilename, 'rb'))
     context.bot.send_photo(chat_id=update.effective_chat.id, photo=open('/home/pi/Photobooth/Photos/2020-01-25_16-35-25_card.jpg', 'rb'))                          
 
