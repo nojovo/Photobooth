@@ -564,7 +564,7 @@ class Photobooth:
         self.screen_change_paper = os.path.join(self.screens_abs_file_path,
                                                 self.config.get("Screens", "screen_change_paper",
                                                                 fallback="ScreenChangePaper.png"))
-        self.token = int(self.config.get("Telgram", "token", fallback="0815"))
+        self.token = self.config.get("Telgram", "token", fallback="ABC")
 
         self.screen_photo = []
 
