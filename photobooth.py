@@ -23,6 +23,8 @@ from telegram.ext import Updater, CommandHandler
 import requests
 import re
 
+from telegram.error import (TelegramError, Unauthorized, BadRequest, TimedOut, ChatMigrated, NetworkError)
+
 # get the real path of the script
 REAL_PATH = os.path.dirname(os.path.realpath(__file__))
 
@@ -381,6 +383,9 @@ class Photobooth:
         
         # create dispatcher
         dispatcher = updater.dispatcher
+
+        # error handling
+        dispatcher.add_error_handler(error_callback)
 
         start_handler = CommandHandler('start', start)
         dispatcher.add_handler(start_handler)
@@ -1253,6 +1258,22 @@ def start(update, context):
 
 #def unknown(update, context):
 #    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
+
+def error_callback(update, context):
+    try:
+        raise context.error
+    except Unauthorized:
+        # remove update.message.chat_id from conversation list
+    except BadRequest:
+        # handle malformed requests - read more below!
+    except TimedOut:
+        # handle slow connection problems
+    except NetworkError:
+        # handle other connection problems
+    except ChatMigrated as e:
+        # the chat_id of a group has changed, use e.new_chat_id instead
+    except TelegramError:
+        # handle all other telegram related errors
 
 # Main Routine
 def main():
