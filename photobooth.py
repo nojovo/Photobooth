@@ -565,6 +565,7 @@ class Photobooth:
                                                 self.config.get("Screens", "screen_change_paper",
                                                                 fallback="ScreenChangePaper.png"))
         self.token = self.config.get("Telgram", "token", fallback="ABC")
+        self.chat_id = self.config.get("Telgram", "chat_id", fallback="123")
 
         self.screen_photo = []
 
@@ -916,6 +917,9 @@ class Photobooth:
         if self.printPicsEnable == False:
             logging.debug("print enable = false")
 
+            # send photo
+            updater.dispatcher.add_handler(CommandHandler('bop', bop,))
+
         # print photo?
         if self.printPicsEnable == True:
             logging.debug("print enable = true")
@@ -1202,6 +1206,11 @@ class Photobooth:
 def hello(update, context):
     update.message.reply_text(
         'Hello {}'.format(update.message.from_user.first_name))
+
+def bop(bot, update):
+    #url = get_url()
+    #chat_id = update.message.chat_id
+    bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
 
 # Main Routine
 def main():
