@@ -380,27 +380,27 @@ class Photobooth:
         # updater.start_polling()
         # updater.idle()
 
-        logging.debug("telegram add start command handler")
+        #logging.debug("telegram add start command handler")
         # telegram updater
-        updater = Updater(self.token , use_context=True)
+        #updater = Updater(self.token , use_context=True)
         
         # create dispatcher
-        dispatcher = updater.dispatcher
+        #dispatcher = updater.dispatcher
 
         # # error handling
         # dispatcher.add_error_handler(error_callback)
 
-        start_handler = CommandHandler('start', start)
-        dispatcher.add_handler(start_handler)
+        #start_handler = CommandHandler('start', start)
+        #dispatcher.add_handler(start_handler)
 
-        updater.dispatcher.add_handler(CommandHandler('hello', hello))
-        updater.dispatcher.add_handler(CommandHandler('bop', bop,))
+        #updater.dispatcher.add_handler(CommandHandler('hello', hello))
+        #updater.dispatcher.add_handler(CommandHandler('bop', bop,))
         
-        #unknown_handler = MessageHandler(Filters.command, unknown)
-        #dispatcher.add_handler(unknown_handler)
+        ####unknown_handler = MessageHandler(Filters.command, unknown)
+        ####dispatcher.add_handler(unknown_handler)
 
-        updater.start_polling()
-        # updater.idle()
+        #updater.start_polling()
+        #### updater.idle()
 
         # Start the Application
         self.on_enter_PowerOn()
