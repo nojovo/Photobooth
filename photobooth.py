@@ -18,6 +18,11 @@ import cups  # connection to cups printer driver
 import usb  # check if printer is connected and turned on
 from wand.image import Image as image  # image manipulation lib
 
+## for telegram bot
+from telegram.ext import Updater, CommandHandler
+import requests
+import re
+
 # get the real path of the script
 REAL_PATH = os.path.dirname(os.path.realpath(__file__))
 
@@ -550,7 +555,7 @@ class Photobooth:
         self.screen_change_paper = os.path.join(self.screens_abs_file_path,
                                                 self.config.get("Screens", "screen_change_paper",
                                                                 fallback="ScreenChangePaper.png"))
-
+        self.token = int(self.config.get("Telgram", "token", fallback="0815"))
 
         self.screen_photo = []
 
@@ -1184,6 +1189,10 @@ class Photobooth:
         logging.debug("PrinterNotFound")
         return False
 
+# Telgram Routine
+def hello(update, context):
+    update.message.reply_text(
+        'Hello {}'.format(update.message.from_user.first_name))
 
 # Main Routine
 def main():
@@ -1203,6 +1212,16 @@ def main():
     logging.info("info message")
     logging.debug("debug message")
 
+    # for the telegram bot
+    logging.info("try start telegram bot")
+    updater = Updater(self.token , use_context=True)
+
+    updater.dispatcher.add_handler(CommandHandler('hello', hello))
+
+    updater.start_polling()
+    updater.idle()
+
+    # go ahaed
     while True:
 
         logging.debug("Starting Photobooth")
