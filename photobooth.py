@@ -1251,8 +1251,8 @@ def bop(update, context):
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
-def unknown(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
+#def unknown(update, context):
+#    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
 
 # Main Routine
 def main():
@@ -1290,9 +1290,6 @@ if __name__ == "__main__":
     try:
         main()
 
-        # stop telegram bot
-        updater.stop()
-
     except KeyboardInterrupt:
         logging.debug("keyboard interrupt")
 
@@ -1300,4 +1297,6 @@ if __name__ == "__main__":
         logging.critical("unexpected error: " + str(exception))
 
     finally:        
-        logging.debug("logfile closed")
+        logging.debug("logfile closed")        
+        # stop telegram bot
+        updater.stop()
