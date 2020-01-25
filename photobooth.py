@@ -387,10 +387,9 @@ class Photobooth:
 
         updater.dispatcher.add_handler(CommandHandler('hello', hello))
         updater.dispatcher.add_handler(CommandHandler('bop', bop,))
-
         
-        unknown_handler = MessageHandler(Filters.command, unknown)
-        dispatcher.add_handler(unknown_handler)
+        #unknown_handler = MessageHandler(Filters.command, unknown)
+        #dispatcher.add_handler(unknown_handler)
 
         updater.start_polling()
         # updater.idle()
