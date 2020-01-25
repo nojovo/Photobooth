@@ -368,12 +368,12 @@ class Photobooth:
 
         # for the telegram bot
         logging.info("try start telegram bot")
-        updater = Updater(self.token , use_context=True)
+        # updater = Updater(self.token , use_context=True)
 
-        updater.dispatcher.add_handler(CommandHandler('hello', hello))
+        # updater.dispatcher.add_handler(CommandHandler('hello', hello))
 
-        updater.start_polling()
-        updater.idle()
+        # updater.start_polling()
+        # updater.idle()
 
         # Start the Application
         self.on_enter_PowerOn()
@@ -916,9 +916,16 @@ class Photobooth:
 
         if self.printPicsEnable == False:
             logging.debug("print enable = false")
-
+            logging.debug("telegram try sending the image")
             # send photo
+            updater = Updater(self.token , use_context=True)
+
+            # updater.dispatcher.add_handler(CommandHandler('hello', hello))
             updater.dispatcher.add_handler(CommandHandler('bop', bop,))
+
+            updater.start_polling()
+            updater.idle()
+           
 
         # print photo?
         if self.printPicsEnable == True:
@@ -1210,6 +1217,7 @@ def hello(update, context):
 def bop(bot, update):
     #url = get_url()
     #chat_id = update.message.chat_id
+    logging.debug("telegram bop the image" + self.cardfilename)
     bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
 
 # Main Routine
