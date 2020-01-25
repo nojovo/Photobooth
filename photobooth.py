@@ -1228,7 +1228,7 @@ def bop(bot, update):
     bot.send_photo(chat_id=self.chat_id, photo=self.cardfilename)
 
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me! (We are on chat " + update.effective_chat.id + ")")
 
 # Main Routine
 def main():
