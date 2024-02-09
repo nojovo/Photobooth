@@ -19,11 +19,11 @@ import usb  # check if printer is connected and turned on
 from wand.image import Image as image  # image manipulation lib
 
 ## for telegram bot
+import asyncio
 from telegram.ext import Updater, CommandHandler
+import telegram
 import requests
 import re
-
-from telegram.error import (TelegramError, Unauthorized, BadRequest, TimedOut, ChatMigrated, NetworkError)
 
 ## for image from memory
 from io import BytesIO
@@ -1273,9 +1273,12 @@ def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
 def send_image(botToken, imageFile, chat_id):
-    command = 'curl -s -X POST https://api.telegram.org/bot' + botToken + '/sendPhoto -F chat_id=' + chat_id + " -F photo=@" + imageFile
-    subprocess.call(command.split(' '))
-    return
+    logging.debug("create bot")
+    bot = telegram.Bot(botToken)
+    logging.debug("try to send photo")
+    with open(imageFile, "rb") as photo:
+        asyncio.run(bot.send_photo(chat_id, photo))
+    logging.debug("sent image successfully")
 
 #def unknown(update, context):
 #    context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")    
